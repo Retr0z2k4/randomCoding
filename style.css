@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 html,
 body {
+            background-image: linear-gradient(to bottom, rgba(1, 26, 71, 0.966), rgb(0, 0, 0));
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,6 +75,7 @@ body {
 /* Home section */
 
 .home {
+    border-bottom: 8px   rgba(1, 26, 71, 0.966);
     width: 100%;
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
@@ -360,4 +362,30 @@ body {
 	.myP {
 		padding:2%;
 	}
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
 }

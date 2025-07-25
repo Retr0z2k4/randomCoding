@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form input {
+  margin: 0 10px;
+  padding: 4px;
+}
+
+.grafico-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  height: 300px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding-left: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.barra-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barras {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.barra {
+  width: 20px;
+  border-radius: 4px 4px 0 0;
+}
+
+.medido {
+  background-color: steelblue;
+}
+
+.padrao {
+  background-color: tomato;
+}
+
+.label {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.eixo-label {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.eixo-label div {
+  transform: translateY(50%);
+}

@@ -1,0 +1,27 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico de Calibração (com Formulário)</title>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <h2>Gráfico de Calibração</h2>
+  <p><strong>Azul:</strong> Valor Medido | <strong>Vermelho:</strong> Valor Padrão</p>
+
+  <form id="formulario">
+    <label>Valor Padrão:</label>
+    <input type="number" step="0.01" name="padrao" required>
+    <label>Valor Medido:</label>
+    <input type="number" step="0.01" name="medido" required>
+    <button type="submit">Adicionar ao Gráfico</button>
+    <button type="button" id="limpar">Limpar Gráfico</button>
+  </form>
+
+  <div class="grafico-container" id="grafico">
+    <div class="eixo-label" id="eixo-y"></div>
+  </div>
+
+  <script src="jsc/code.js"></script>
+</body>
+</html>
