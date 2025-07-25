@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Style</title>
+  <link rel="stylesheet" href="edit.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Urban Style</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul> 
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Explore a Cidade com Estilo</h2>
+    <button onclick="scrollToGaleria()">Ver Galeria</button>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Um site com temática urbana e moderna para amantes de arte de rua, arquitetura brutalista e o caos criativo da cidade.</p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria Urbana</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/ruas-de-nova-york-cheias-de-grafites.jpg" alt="Arte de Rua 1">
+        <p>Grafite colorido no centro histórico</p>
+      </div>
+      <div class="card">
+        <img src="images/silos-agricolas-exterior-edificio.jpg" alt="Prédio 2">
+        <p>Arquitetura brutalista em São Paulo</p>
+      </div>
+      <div class="card">
+        <img src="images/pexels-pixabay-257700.jpg" alt="industrial 1">
+        <p>Mural underground em bairro alternativo</p>
+      </div>
+      <div class="card">
+        <img src="images/pexels-pixabay-256381.jpg" alt="industrial2">
+        <p>Luzes da cidade à noite</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form id="formulario">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem-sucesso"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Urban Style. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script/base.js"></script>
+</body>
+</html>
